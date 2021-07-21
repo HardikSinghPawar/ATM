@@ -8,14 +8,12 @@ age = [15,21,8,46]
 passcode = [8800,8848,9900,9900]
 
 
-acc_num[4] = 9009866619
-print(acc_num)
 
 number= int(input("\r\n ENTER YOUR MOBILE NUMBER"))
 
 if number in acc_num:
     index = acc_num.index(number)
-    print(name[index])
+    print("HELLO"+  name[index])
     pin=int(input("\r\n ENTER YOUR PIN"))
 
     if(pin==passcode[index]):
@@ -24,8 +22,8 @@ if number in acc_num:
         if (transaction==1):
                         amount = int(input("\r\n ENTER AMOUNT YOU WANT TO WIDRAW"))
                         if (amount<=acc_bal[index]):
-                            verification=(input("\r\n YOU HAVE SELECTED TO WIDRAW %d \r\n PRESS Y TO PROCEED PRESS N TO CANCEL "%(amount)) )
-                            if (verification=="Y"):
+                             verification=(input("\r\n YOU HAVE SELECTED TO WIDRAW %d \r\n PRESS Y TO PROCEED PRESS N TO CANCEL "%(amount)) )
+                             if (verification=="Y"):
                                 print("\r\n COLLECT CASH")
                                 print(acc_bal[index]-amount)
                                 print("\r\n  LEFT IN YOUR ACCOUNT")
@@ -50,8 +48,7 @@ if number in acc_num:
     else:
          print("WRONG PIN")
 else:
-    print
-         
+    print("USER NOT EXIST")
          
 
             
