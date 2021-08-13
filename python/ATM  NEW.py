@@ -16,7 +16,7 @@ while True:
         print(name[index])
         pin=int(input("\r\n ENTER YOUR PIN"))
         if(pin==passcode[index]):
-            transaction=int(input("\r\n PRESS 1 TO WIDRAW \r\n PRESS 2 TO DEPOSITE \r\n PRESS 3 TO CHECK ACCOUNT BALANCE \r\n PRESS 3 TO CHANGE PIN "))
+            transaction=int(input("\r\n PRESS 1 TO WIDRAW \r\n PRESS 2 TO DEPOSITE \r\n PRESS 3 TO CHECK ACCOUNT BALANCE \r\n PRESS 4 TO CHANGE PIN "))
             acc_type=int(input("\r\n SELECT ACCOUNT TYPE \r\n PRESS 1 FOR SAVING ACCOUNT \r\n PRESS 2 FOR CURRENT ACCOUNT"))
             if (transaction==1):
                 amount = int(input("\r\n ENTER AMOUNT YOU WANT TO WIDRAW"))
@@ -43,6 +43,8 @@ while True:
                 if(new_pin<10000):
                     pin=new_pin
                     print("\r\n PIN UPDATE SUCSESSFULLY")
+            else:
+                print("\r\n INVALID OPTION")
         else:
             print("wrong pin")
     else:
