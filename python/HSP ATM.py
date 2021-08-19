@@ -27,7 +27,7 @@ while True:
                         print(acc_bal[index]-amount)
                         print("\r\n  LEFT IN YOUR ACCOUNT")
                 else:
-                    print(" INSUFFICIANT BANLANCE ")
+                    print(" \r\n INSUFFICIANT BANLANCE ")
                                  
 
             elif(transaction==2):
@@ -46,9 +46,10 @@ while True:
             else:
                 print("\r\n INVALID OPTION")
         else:
-            print("wrong pin")
+            print("\r\n WRONG PIN")
+            continue
     else:
-        print("USER NOT EXISTS")
-         
+        print("\r\n USER NOT EXISTS")
+        continue
 
             
